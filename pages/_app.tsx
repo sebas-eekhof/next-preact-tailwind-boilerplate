@@ -1,8 +1,14 @@
-import '../styles/globals.css'
+import '@styles/index.scss';
 import type { AppProps } from 'next/app'
+import Head from 'next/head';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+export default function NextApp({ Component, pageProps }: AppProps) {
+	return (
+		<>
+			<Head>
+
+			</Head>
+			<Component {...pageProps} />
+		</>
+  	)
 }
-
-export default MyApp
